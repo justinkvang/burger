@@ -1,8 +1,8 @@
 var burger = require("../models/burger");
 var express = require("express");
 
-var app = express();
+var router = express.Router();
 
 // create router
 
-// export router
+module.exports = router;
