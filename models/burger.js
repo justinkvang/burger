@@ -8,7 +8,7 @@ var burger = {
       orm.selectAll("burgers", function(res) { // this is calling the tables 'burgers' from database
         cb(res);
       });
-    },
+    }
 }
 
 module.exports = burger;

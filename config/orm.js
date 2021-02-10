@@ -9,17 +9,17 @@ var orm = {
         });
     },
 
-    insertOne: function(id, name, devoured) {
-        var queryString = "INSERT INTO ?? VALUES ??";
-        connection.query(queryString[id, name, devoured], function(err, res) {
-            if (err) throw err;
-            console.log(res);
-        });
-    },
+    // insertOne: function(id, name, devoured) {
+    //     var queryString = "INSERT INTO ?? VALUES ??";
+    //     connection.query(queryString[id, name, devoured], function(err, res) {
+    //         if (err) throw err;
+    //         console.log(res);
+    //     });
+    // },
 
-    updateOne: function() {
+    // updateOne: function() {
 
-    }
+    // }
 }
 
 module.exports = orm;
