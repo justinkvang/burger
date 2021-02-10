@@ -1,7 +1,22 @@
 <h1>EAT-DA-BURGER!</h1>
 
+<h2>Devoured Burgers!</h2>
+
 <ul>
   {{#each burgers}}
+    {{#unless devoured}}
+      {{> cats/cat-block sleep=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Waiting to be devoured...</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> cats/cat-block sleep=false}}
+    {{/if}}
   {{/each}}
 </ul>
 
@@ -13,5 +28,11 @@
     <input type="text" id="ca" name="name">
   </div>
 
-  <button type="submit">Submit</button>
+  <div class="form-group">
+    <label for="slee">Devoured?</label><br>
+    <input type="radio" name="sleepy" value="1" checked> Devoured!<br>
+    <input type="radio" name="sleepy" value="0"> Cooking...
+  </div>
+
+  <button type="submit">Add Burger</button>
 </form>
