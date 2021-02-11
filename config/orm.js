@@ -16,6 +16,7 @@ function printQuestionMarks(num) {
   return arr.toString();
 }
 
+// converting json format to mysql format
 // Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
   var arr = [];
