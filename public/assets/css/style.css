@@ -23,12 +23,13 @@ body {
 }
 
 #column1 {
-  background-color: red;
+  background-color: #32c704;
 }
 
 #column2 {
-  background-color: blue;
+  background-color: #ec3521;
 }
+
 li {
   padding: 5px;
   margin: 5px;
@@ -48,5 +49,9 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.add {
+  text-align: center;
 }
 
